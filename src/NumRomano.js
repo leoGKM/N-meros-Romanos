@@ -1,10 +1,10 @@
 function conversor (num){
     let resultado = "";
-    if (num >= 10){
+    while (num >= 10){
         resultado += "X";
         num-= 10;
-    } else if (num == 9) {
-        resultado = "IX";
+    } if (num == 9) {
+        resultado += "IX";
         num -= 9;
     } else if (num == 4){
         resultado += "IV";
