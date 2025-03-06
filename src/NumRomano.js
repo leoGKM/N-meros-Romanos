@@ -1,5 +1,13 @@
 function conversor (num){
     let resultado = "";
+    if (num==500) {
+        resultado = "D";
+        num -= 500;
+    }
+    if (num>=400) {
+        resultado += "CD";
+        num -= 400;
+    }
     while (num >= 100){
         resultado += "C";
         num-= 100;
