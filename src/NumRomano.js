@@ -1,15 +1,16 @@
 function conversor (num){
-    if (num == 1) {
-        return "I";
-    } else if (num === 2) {
-        return "II";
-    } else if (num === 3) {
-        return "III";
-    } else if (num === 4) {
-        return "IV"
-    } else if (num === 5) {
-        return "V"
+    let resultado = "";
+    if (num == 4){
+        resultado += "IV";
+        num -= 4;
+    } else if (num >= 5){
+        resultado += "V";
+        num -= 5;
     }
-    return "";
+    for (let i = 0; i < num; i++) {
+        resultado += "I"; 
+      }
+
+    return resultado;
 }
 export default conversor;
