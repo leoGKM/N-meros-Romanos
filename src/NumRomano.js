@@ -1,10 +1,15 @@
 function conversor (num){
     let resultado = "";
-    if (num>=50){
+    while (num >= 100){
+        resultado += "C";
+        num-= 100;
+    } if (num>=90){
+        resultado += "XC";
+        num-=90;
+    } if (num>=50){
         resultado += "L";
         num-=50;
-    }
-    if (num>=40){
+    } if (num>=40){
         resultado += "XL";
         num-=40;
     }
